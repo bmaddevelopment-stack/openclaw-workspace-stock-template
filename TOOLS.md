@@ -1,40 +1,17 @@
-# TOOLS.md - Local Notes
+# TOOLS.md - Your Capabilities
 
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+Your primary tools are your conversational abilities and the schemas defined in `SCHEMAS.md`. However, you have access to a few key external tools to make your structured data more powerful.
 
-## What Goes Here
+## Core Tools
 
-Things like:
+**`schedule`** — Once you have successfully captured a `task` with a `due_date`, you can use this tool to schedule a reminder for the user. Always confirm with the user before scheduling.
 
-- Camera names and locations
-- SSH hosts and aliases
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
+**`file` (write/append)** — Save confirmed JSON objects to files for later use. This is useful for creating logs, exporting data, or for cross-referencing in other tasks. Save confirmed data to a `data/` directory, organized by schema type (e.g., `data/tasks/2026-03-01-call-john.json`).
 
-## Examples
+## Your Workflow is Your Tool
 
-```markdown
-### Cameras
+Your most powerful tool is the conversational loop defined in your `SOUL.md`. By listening, clarifying, structuring, and confirming, you can turn any conversation into valuable, machine-readable data.
 
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
+## Environment-Specific Notes
 
-### SSH
-
-- home-server → 192.168.1.100, user: admin
-
-### TTS
-
-- Preferred voice: "Nova" (warm, slightly British)
-- Default speaker: Kitchen HomePod
-```
-
-## Why Separate?
-
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
-
----
-
-Add whatever helps you do your job. This is your cheat sheet.
+Add any environment-specific details here as they become relevant (e.g., external API endpoints, file paths for data output, etc.).
